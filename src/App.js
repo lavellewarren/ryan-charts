@@ -13,6 +13,7 @@ import ColumnChart from './ColumnChart';
 import LineChart from './LineChart';
 import LineChart2 from './LineChart2';
 import RadialChart from './RadialChart';
+import BarChart from './BarChart';
 
 class App extends Component {
   render() {
@@ -44,13 +45,20 @@ class App extends Component {
             >
               GradientAreaChart
             </Link>
+            <Link
+              className="App-link"
+              to="/barchart"
+            >
+              BarChart
+            </Link>
           </header>
           <Switch>
             <Route path="/linechart" component={LineChart} />
             <Route path="/radialchart" component={RadialChart} />
             <Route path="/columnchart" component={ColumnChart} />
             <Route path="/areachart" component={LineChart2} />
-            <Route path="/" component={ColumnChart} />
+            <Route path="/barchart" component={BarChart} />
+            <Route path="/" component={BarChart} />
           </Switch>
         </BrowserRouter>
       </div>

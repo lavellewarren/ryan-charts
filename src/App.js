@@ -58,7 +58,7 @@ class App extends Component {
             <Route path="/columnchart" component={ColumnChart} />
             <Route path="/areachart" component={LineChart2} />
             <Route path="/barchart" component={BarChart} />
-            <Route path="/" component={BarChart} />
+            <Route path="/" component={LineChart} />
           </Switch>
         </BrowserRouter>
       </div>
